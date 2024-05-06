@@ -10,6 +10,7 @@ body {
   background: #aaa;
   color: #333;
   /* I'll give you this one for free lol */
+  /* nice one!! :{ */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -17,7 +18,7 @@ body {
 
 .modal {
   background: white;
-  width: 480px;
+  flex-basis: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
 }
@@ -66,4 +67,35 @@ button.cancel {
   background: white;
   border: 1px solid #ddd;
   color: royalblue;
+}
+
+.modal {
+  display: flex;
+  padding: 15px;
+  gap: 15px;
+}
+
+.icon {
+  flex-shrink: 0;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+
+.text {
+  margin-bottom: 15px;
+}
+
+.button {
+  display: flex;
+  gap: 5px;
 }
